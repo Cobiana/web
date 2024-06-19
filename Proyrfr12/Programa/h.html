@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe del Proyecto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .team-members, .materials {
+            margin-left: 20px;
+        }
+        .materials li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Centro de Bachillerato Tecnológico Industrial y de Servicio no. 269</h1>
+        <h2>Proyecto Transversal de Electrónica 2024</h2>
+        <h3>Realiza mantenimiento a sistemas electrónicos de potencia</h3>
+        <h3>Programa PLC para sistemas automatizados</h3>
+        <h3>CAMPAÑA DE CONCIENTIZACIÓN Y CUIDADO DE MASCOTAS</h3>
+        <p>Quintero Salas Dana Paola<br>Aragonez Contreras Leslie Yocelyn</p>
+        <p>Profesores: Ing. Alfredo Hernández Lozano, Ing. Miguel Ángel Sánchez De La Rosa, Ing. Elvia Urbina Moctezuma</p>
+        <p>Cd. Juárez, Chih. 13 de junio de 2024</p>
+    </header>
+
+    <section>
+        <h2>Objetivo</h2>
+        <p>El objetivo de este proyecto transversal es aplicar los conocimientos adquiridos en la programación de escalera para PLC, para servir a nuestra comunidad estudiantil y a nuestra comunidad local, apoyando a través de un sistema de señalización automatizado con luces multicolores para agilizar y ayudar en el proceso de esterilización de la población canina en una instalación especializada.</p>
+    </section>
+
+    <section>
+        <h2>Introducción</h2>
+        <p>En muchas comunidades, el exceso de perros es un problema que afecta no solo a los propios animales, sino también a los residentes locales y al medio ambiente en general. La sobrepoblación de perros puede crear varios desafíos, desde la propagación de enfermedades hasta el aumento de la agresión y los accidentes de tráfico. Una solución fundamental para abordar efectivamente este problema es la esterilización de perros. La implementación eficiente de programas de esterilización puede encontrar obstáculos logísticos y operativos. Aquí es donde la automatización a través del uso de PLC ofrece una solución prometedora. Exploraremos cómo la combinación de la esterilización canina con un programa automatizado gestionado por PLC puede optimizar el proceso de esterilización, aumentar la eficiencia y reducir costos, abordando así efectivamente el problema del exceso de perros en la comunidad.</p>
+        <p>Este proyecto tiene como objetivo promover la esterilización de perros utilizando conocimientos previamente adquiridos, es decir, utilizando la programación de contacto en escalera para PLC, que ha demostrado ser una herramienta invaluable para optimizar la eficiencia, mejorar la precisión y reducir los costos operativos. Además, utilizando el software de aplicaciones RSLOGIX, RSLINK y LOGIXPRO que trabaja junto con el PLC, pretendemos crear un programa que pueda gestionar adecuadamente cada sala de esterilización canina establecida.</p>
+    </section>
+
+    <section>
+        <h2>Marco Teórico</h2>
+        <p>Para crear una clínica veterinaria para esterilizar el exceso de perros en la comunidad, se obtuvieron datos sobre algunos componentes para el circuito como los sensores de presencia, que son dispositivos electrónicos capaces de detectar cualquier movimiento en el área donde están instalados, encendiendo o apagando un sistema.</p>
+        <p>Existen varios tipos de sensores de presencia, incluidos sensores fotoeléctricos, sensores de proximidad inductivos, sensores ultrasónicos, sensores de proximidad capacitivos, detección 3D reconfigurable Swift-E, entre otros.</p>
+        <p>Un sensor de presencia es un tipo de sensor que activa o desactiva automáticamente el mecanismo eléctrico al que está conectado cuando detecta o no detecta la presencia de un objeto dentro de un radio de acción determinado. Esta detección puede hacerse con o sin contacto con el objeto. Cabe destacar que los detectores de movimiento solo miden la luminosidad cuando actúan, mientras que los detectores de presencia miden continuamente durante el tiempo que detectan movimiento, diferenciando entre luz natural y artificial.</p>
+        <p>Los sensores de presencia están conectados al detector de presencia, que necesitará el cable neutro. Por lo tanto, en esta fase, debe detectarse la caja de conexiones más cercana al interruptor donde se alimenta. Usando una guía de cables, pasaremos el cable desde la caja de conexiones hasta el área donde se instalará el detector de presencia.</p>
+        <p>Además, tenemos un contador de 0 a 9 que ayudará a indicar cuántos perros han pasado a la mesa de operaciones. Este contador consiste en un circuito generador de ondas compuesto esencialmente por un temporizador 555 funcionando como un multivibrador astable. Este tipo de operación se caracteriza por una salida de onda cuadrada de un ancho definido por el diseñador. La frecuencia del pulso de salida puede variarse mediante el potenciómetro de 100k ohm.</p>
+    </section>
+
+    <section>
+        <h2>Desarrollo</h2>
+        <p>Esta clínica veterinaria tiene 3 salas:</p>
+        <ul class="materials">
+            <li>Área de Intervención Quirúrgica: donde habrá una mesa con un sensor que indica cuando se coloca un perro en ella para la intervención quirúrgica. Un sensor en la puerta de entrada encenderá un LED rojo indicando que la sala está en uso.</li>
+            <li>Área de Post-Operación y Observación: donde habrá camas para que los perros después de la intervención quirúrgica sean atendidos. Un sensor en la puerta apagará el LED rojo y encenderá un LED amarillo parpadeante, indicando que la sala está en uso. Este LED amarillo será controlado por dos LEDs blancos en la sala que también se encenderán.</li>
+            <li>Área de Espera de Clientes: donde habrá sillas para que los clientes esperen a sus mascotas después de la recuperación. Cuando la mascota sea dada de alta y no haya otro perro en la mesa quirúrgica, la iluminación de la sala se apagará junto con el LED amarillo parpadeante, y se encenderá un LED verde indicando que el perro ha sido dado de alta y la sala está disponible.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Procedimiento</h2>
+        <ul class="materials">
+            <li>En la mesa quirúrgica para animales, habrá un sensor de presencia que determinará si hay un perro para ser intervenido quirúrgicamente.</li>
+            <li>Al detectar al animal en la mesa mediante el sensor de presencia y un sensor de interruptor de límite instalado en la puerta de acceso, ambos sensores indicarán que la sala de intervención quirúrgica está ocupada, encendiendo inmediatamente una luz roja que indica que se está llevando a cabo una intervención y la sala está ocupada.</li>
+            <li>El PLC enviará una señal de salida a un circuito digital que mostrará el número de animales intervenidos en dos pantallas.</li>
+            <li>Cuando el animal complete su cirugía y se traslade a la sala de recuperación, se encenderá una luz amarilla parpadeante y se apagará la luz roja. La luz amarilla parpadeante será gobernada por el interruptor de luz en la sala de observación y atención.</li>
+            <li>Cuando no haya presencia de un animal en la mesa quirúrgica, las luces de la sala de observación y atención están apagadas y la puerta de acceso está abierta, la luz amarilla parpadeante se apagará y se encenderá una luz verde, indicando que la sala de intervención quirúrgica está disponible.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Materiales Utilizados</h2>

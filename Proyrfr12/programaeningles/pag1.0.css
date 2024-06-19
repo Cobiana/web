@@ -1,0 +1,107 @@
+.p{
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+}
+.d{
+    position: relative;
+    top: 20px;
+}
+textarea{
+    position: relative;
+    top: 50px;
+    left: 70px;
+
+}
+.intuptext{
+    position: relative;
+    height: 20pt;
+
+
+}
+.barralateral{
+    background-color: #f8f4ec;
+}
+.enviar{
+    background-color: #d87c14;
+    color: white;
+    position: relative;
+    top: 100px;
+    padding: 15px;
+    left: -200px;
+   
+}
+.con{
+    color: #d87c14;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.j{
+    position: relative;
+    top: 70px;
+}
+.k{
+    position: relative;
+    top: -20px;
+}
+.bara1lat{
+    width: 1305px ;
+    height: 300px;
+    background-color: #d87c14;
+}
+.bara1lat{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.lis{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.encutiles{
+    position: relative;
+    left: 500px;
+}
+.ci{
+    width: 200px;
+    position: relative;
+    top: -250px;
+    left: 900px;
+
+}
+.k1{
+    position: relative;
+    top: -205px;
+    left: 950px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.enlase{
+    width: 1305px;
+    height: 50px;
+   
+    position: relative;
+    top: -205px;
+    background-color: #f0e4dc;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.cambiodeideoma{
+    width: 300px;
+}
+.lis{
+    width: 300px;
+}
+.encutiles{
+    width: 300px;
+}
+.barralateral{
+    width: 1305px;
+    height: 500px;
+  
+    position: relative;
+    top:-70px;
+    text-align:center ;
+
+} 

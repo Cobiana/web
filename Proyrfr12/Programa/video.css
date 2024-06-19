@@ -1,0 +1,26 @@
+video{
+    position: relative;
+    left: 10px;
+}
+.pa{
+    width: 1315px;
+    height: 400px;
+    background-image: url(https://www.bookitit.com/wp-content/uploads/2022/10/Aplicacion-cita-previa-veterinaria.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+.color{
+    border: 1px solid black;
+    width: 1315px;
+    height: 100px;
+    background-color:#d87c14 ;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+.uu{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}

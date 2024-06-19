@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+/*Barra*/
+header {
+    background-color: #FFFFFF;
+    padding: 10px 0;
+    
+    
+    
+} 
+
+.container {
+    width: 80%;
+    margin: auto;
+    /*overflow: hidden;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav {
+    position: relative;
+  
+ 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #ddd;
+    color: black;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul ul li {
+    float: none;
+}
+
+nav ul ul li a {
+    padding: 10px 20px;
+    color: black;
+    text-align: left;
+}
+
+nav ul ul li a:hover,
+nav ul ul li a:focus {
+    background-color: #575757;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+label[for="menu"] {
+    display: none;
+    cursor: pointer;
+}
+
+label[for="menu"] img {
+    height: 30px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    label[for="menu"] {
+        display: block;
+    }
+    input[type="checkbox"]:checked + nav ul {
+        display: flex;
+    }
+    nav ul ul {
+        position: static;
+    }
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu a:hover,
+.menu a:focus {
+    background-color: #ddd;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+/*foto1*/
+
+.pagp{
+  
+    background-image: url(http://localhost/Proyrfr/Iconos/regal-7.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1305px;
+    height:500px ;
+}
+.englema{
+    font-size: 30px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    background-color:  #d87c14;
+    padding: 20px;
+}
+.card {
+    background-color:  #d87c14;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.medio{
+    width: 1300px;
+    height: 600px;
+   
+    background-image: url("http://localhost/Proyrfr/Iconos/Captura%20de%20pantalla%202024-06-09%20234801.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+}
+.pastor{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.info1{
+    position: relative;
+    left: 400px;
+}
+.lista{
+   
+    width: 500px;
+
+}
+
+.eslogan{
+    width: 500px;
+    color: grey;
+}
+.info1{
+    width: 500px;
+    top: -200px;
+    left: 600px;
+    
+}
+h3{
+    color: #d87c14;
+    font-size: 30px;
+}
+.info3{
+    position: relative;
+    right: 200px;
+}
+.felino{
+    position: relative;
+    left: 8000px;
+}
+.info3{
+    position: relative;
+ 
+}
+.barralateral{
+    width: 500px;
+  
+}
